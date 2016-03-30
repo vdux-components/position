@@ -42,6 +42,7 @@ function Tooltip ({path, props, children}) {
   * `placement` - `top/left/bottom/right`. Where to put the element relative to the `near` element.
   * `near` - The string ID of the element you want to position `<Postion/>`s child near. If unspecified, the nearest positioned element will be used.
   * `children` - You may only pass one child to position. Its child will be rendered around the `near` element.
+  * `disable` - Disable the positioning (e.g. if the thing isn't shown yet).
 
 ## License
 

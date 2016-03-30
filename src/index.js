@@ -15,12 +15,14 @@ function render ({children}) {
 }
 
 function afterRender ({props}, node) {
-  const {placement, near, space = 0} = props
+  const {placement, near, space = 0, disable = false} = props
 
-  position(node, placement, {
-    near: near && document.getElementById(near),
-    space
-  })
+  if (!disable) {
+    position(node, placement, {
+      near: near && document.getElementById(near),
+      space
+    })
+  }
 }
 
 /**
