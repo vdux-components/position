@@ -16,7 +16,11 @@ function render ({children}) {
 
 function afterRender ({props}, node) {
   const {placement, near, space = 0} = props
-  position(node, document.getElementById(near), placement, space)
+
+  position(node, placement, {
+    near: near && document.getElementById(near),
+    space
+  })
 }
 
 /**
