@@ -19,7 +19,7 @@ function afterRender ({props}, node) {
 
   if (!disable) {
     position(node, placement, {
-      near: near && document.getElementById(near),
+      near: near ? document.getElementById(near) : node.parentNode,
       space
     })
   }
