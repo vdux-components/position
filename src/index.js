@@ -2,8 +2,8 @@
  * Imports
  */
 
-import element from 'vdux/element'
 import position from '@f/position-element'
+import {element} from 'vdux'
 
 /**
  * Position
